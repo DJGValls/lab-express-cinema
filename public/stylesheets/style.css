@@ -1,8 +1,73 @@
-body {
+#body-home {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image: url("../images/cinema.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+ }
+
+#home{
+  float: right;
+  display: flex;
+  flex-direction: column;
+  }
+
+#cinema-ironhack{
+  color: white;
+  font-size: 35px;
+}
+
+#go-to-movies{
+  border-radius: 30px;
+  padding-inline: 50px;
+  color: rgb(42, 69, 78);
+  background-color: lightcyan;
+}
+
+#body-list{
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-a {
-  color: #00B7FF;
+#movies{
+  display: flex;
+  flex-direction: row ;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  column-gap: 100px;
+  row-gap: 100px;
+  padding: 100px;
+  text-align: center;
 }
+
+.movie-image{
+  box-shadow: 5px 10px 8px #888888;
+
+}
+
+#body-detail{
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  display: flex;
+  flex-direction: row-reverse;
+  column-gap: 50px;
+}
+
+#body-detail p{
+  padding-top: 20px;
+  padding-right: 70%;
+}
+
+#separator {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: left; */
+  column-gap: 20px;
+}
+
+#separator li::before {
+  content: "| ";
+}
+

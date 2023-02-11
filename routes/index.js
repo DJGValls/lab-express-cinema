@@ -20,6 +20,19 @@ router.get("/movies", (req, res, next)=>{
     });
 })
 
+/* GET /movie:movieId page */
+router.get("/movie/:movieId", (req, res, next)=>{
+    MovieModel.findById(req.params.movieId)
+    .then((response) => {
+        //console.log(response);
+        res.render("movieDetail.hbs", {
+            oneMovie: response
+        })
+    })
+    .catch((error) => {
+        next(error);
+    });
+})
 
 
 

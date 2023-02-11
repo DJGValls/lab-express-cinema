@@ -1,0 +1,35 @@
+
+<body id="body-detail">
+
+    <div>
+
+        <a href="/movies">Go Back</a>
+
+        <h2>{{oneMovie.title}}</h2>
+
+        <h3>Director: {{oneMovie.director}}</h3>
+
+        <h4>Stars</h4>
+
+        <ul>
+            {{#each oneMovie.stars}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+
+        <p>{{oneMovie.description}}</p>
+
+        <ul id="separator">
+            {{#each oneMovie.showtimes}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+
+
+    </div>
+
+    <div>
+        <img class="movie-image" src="{{oneMovie.image}}" alt="movieImage">
+    </div>
+    
+</body>
